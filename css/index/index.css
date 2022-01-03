@@ -1,0 +1,92 @@
+* {
+    font-family: 'Bebas Neue';
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/*Estilos para celular*/
+@media only screen and (max-width: 650px) {
+    .header {
+        width: 100%;
+        background-image: url(../../img/ab.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 1%;
+    }
+    .icono {
+        position: relative;
+        width: 30%;
+    }
+    .iconoMenu {
+        position: absolute;
+        left: 77%;
+        top: 2.6%;
+        width: 21%;
+    }
+    .iconoMenuAbierto {
+        position: absolute;
+        left: 77%;
+        top: 2.6%;
+        width: 21%;
+        display: none;
+    }
+    .navTop {
+        display: none;
+        font-size: 200%;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+        top: 15%;
+        margin-left: 5%;
+        background: linear-gradient(to bottom, rgb(17, 14, 190), rgb(5, 3, 158), rgb(13, 11, 139));
+    }
+    .navigator li {
+        padding: 1%;
+    }
+    .navigator li a {
+        color: white;
+    }
+    .navLeft {
+        display: none;
+    }
+}
+/*Estilos para pc*/
+@media only screen and (min-width: 650px) {
+    .iconosMenu {
+        display: none;
+    }
+    .navTop {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        background-image: url(../../img/ab2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 20%;
+        padding: 1%;
+    }
+    .icono {
+        position: relative;
+        width: 13%;
+    }
+    .navLeft {
+        font-size: 200%;
+        position: relative;
+        width: 30%;
+        text-align: center;
+        margin: 1%;
+        height: 80%;
+    }
+    .navigator2 li {
+        padding: 1%;
+        background: linear-gradient(to bottom, rgb(17, 14, 190), rgb(5, 3, 158));
+    }
+    .navigator2 li a {
+        color: white;
+    }
+}
